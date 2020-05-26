@@ -30,7 +30,7 @@ def multi_text_line(image, text, font, text_color, text_start_height):
     lines = line_splitter(text=text, width=31)
     for line in lines:
         line_width, line_height = font.getsize(line)
-        for i in range(0, 30):
+        for i in range(0, 120):
             draw.text(((image_width - line_width) / 2, y_text), line, font=fnt, fill=text_color)
         y_text += line_height
 
