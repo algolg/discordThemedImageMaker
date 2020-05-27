@@ -1,5 +1,8 @@
 # discordThemedImageMaker
 A program that makes images that look differently depending on whether users are in Discord's Dark or Light mode.
+## Prerequisites
+1. Python 3 is installed
+2. pip is installed.
 
 ## Instructions
 1. Clone/download the repro
