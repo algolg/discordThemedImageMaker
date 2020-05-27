@@ -5,7 +5,7 @@ A program that makes images that look differently depending on whether users are
 2. pip is installed.
 
 ## Instructions
-1. Clone/download the repro
+1. Clone/download the repo
 2. Install Pillow (the Python module involved with imaging)
 ```
 pip install Pillow
