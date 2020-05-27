@@ -1,2 +1,2 @@
 # discordThemedImageMaker
-A program that creates images that appear differently in different Discord Themes.
+A program that makes images that look differently depending on whether users are in Discord's Dark or Light mode.
