@@ -1,7 +1,7 @@
-## discordThemedImageMaker
+# discordThemedImageMaker
 A program that makes images that look differently depending on whether users are in Discord's Dark or Light mode.
 
-# Instructions
+## Instructions
 1. Clone/download the repro
 2. Install Pillow (the Python module involved with imaging)
 ```
