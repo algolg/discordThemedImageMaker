@@ -18,3 +18,6 @@ pip install Pillow
 
 [logo]: https://i.imgur.com/reMEpus.png
 Try saving and uploading that image to Discord. Switch between Dark and Light mode to see the difference!
+
+## Other Things
+Inspired by [this Reddit post.](https://www.reddit.com/r/discordapp/comments/8t04ag/this_image_shows_different_text_depending_on/)
