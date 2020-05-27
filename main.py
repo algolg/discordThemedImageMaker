@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
  
 
 base = Image.open('./base.png').convert("RGBA")
@@ -10,20 +10,21 @@ print("Dark theme text:")
 ltext = input()
 
 def line_splitter(text, width):
-    wordsremaining = text.count(" ") + 1
-    textList = [".", text]
+    wordsRemaining = text.count(" ") + 1
+    lineTextList = ["", text]
     lines = []
-    while wordsremaining > 0:
-        appLine1count = ((textList[1])[:width]).count(" ") + 1
-        lineText = ' '.join(textList[1].split()[:appLine1count])
-        exactLine1Count = lineText.count(" ") + 1
-        textList = textList[1].split(lineText)
+    while wordsRemaining > 0:
+        appCharCount = ((lineTextList[1])[:width]).count(" ") + 1
+        lineText = ' '.join(lineTextList[1].split()[:appCharCount])
+        exactCharCount = lineText.count(" ") + 1
+        lineTextList = lineTextList[1].split(lineText)
         lines += [lineText]
-        wordsremaining -= exactLine1Count
+        wordsRemaining -= exactCharCount
     return(lines)
     
 
 def multi_text_line(image, text, font, text_color, text_start_height):
+     # pylint: disable=unused-variable
     draw = ImageDraw.Draw(image)
     image_width, image_height = image.size
     y_text = text_start_height
