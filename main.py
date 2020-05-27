@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont, ImageOps
+from os import path
  
 
 base = Image.open('./base.png').convert("RGBA")
@@ -8,6 +9,8 @@ print("Light theme text:")
 dtext = input()
 print("Dark theme text:")
 ltext = input()
+            
+
 
 def line_splitter(text, width):
     wordsRemaining = text.count(" ") + 1
@@ -56,4 +59,12 @@ while dy < 501:
 two = Image.alpha_composite(base, Light)
 out = Image.alpha_composite(two, Dark)
 
-out.save("output.png", "PNG")
+
+
+fname = "output.png"
+n = 0
+while path.exists(fname) is True:
+    n += 1
+    fname = "output (" + str(n) + ").png"
+
+out.save(fname, "PNG")
