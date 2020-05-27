@@ -8,4 +8,4 @@ A program that makes images that look differently depending on whether users are
 pip install Pillow
 ```
 3. Run `main.py`
-4. Follow the instructions given in the Python terminal; the image should output as `output.png`
+4. Follow the instructions given in the Python terminal; the image should output as `output.png` or some variation of it.
