@@ -14,3 +14,4 @@ pip install Pillow
 ![alt text][logo]
 
 [logo]: https://i.imgur.com/reMEpus.png
+Try saving and uploading that image to Discord. Switch between Dark and Light mode to see the difference!
